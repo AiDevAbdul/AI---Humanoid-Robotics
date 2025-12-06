@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(git fetch --all --prune)",
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat(textbook): create Physical AI & Humanoid Robotics textbook constitution and spec\n\n- Create comprehensive constitution with 15 principles for AI-first textbook development\n- Add pedagogical approaches, technical architecture, and gamification principles\n- Create detailed specification with 5 user stories and 10 functional requirements\n- Implement AI personalization, RAG chatbot, and multi-language support features\n- Add progress tracking, badges, and interactive learning elements\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push -u origin 001-textbook-physical-ai)",
+      "Bash(pwsh -Command \".specify/scripts/powershell/check-prerequisites.ps1 -Json\")",
+      "Bash(git --version)",
+      "Bash(git rev-parse --is-inside-work-tree)",
+      "Bash(git rev-parse --abbrev-ref HEAD)"
     ],
     "deny": [],
     "ask": []
