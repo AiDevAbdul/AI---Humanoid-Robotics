@@ -1,0 +1,101 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Node.js/JavaScript/TypeScript (for frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnp/
+.pnp.js
+src/.module-cache/
+coverage/
+.nyc_output/
+*.log
+logs/
+
+# Docusaurus
+.docusaurus/
+.build/
+.dist/
+.temp/
+.cache/
+.vercel/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env*
+!.env.example
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db:encryptable
+
+# Database
+*.db
+*.db-journal
+
+# Build outputs
+dist/
+build/
+target/
+out/
+.output/
+*.min.js
+*.min.css
+
+# Docker
+.dockerignore
+*.dockerignore
+
+# Documentation
+docs/api/
+docs/assets/
