@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-// Import the existing chatbot component from the frontend directory
-const Chatbot = React.lazy(() => import('../../../../frontend/src/components/Chatbot'));
-// Import the existing progress tracker component from the frontend directory
-const ProgressTracker = React.lazy(() => import('../../../../frontend/src/components/ProgressTracker'));
+// Import the existing chatbot component from the current components directory
+const Chatbot = React.lazy(() => import('../Chatbot'));
+// Import the existing progress tracker component from the current components directory
+const ProgressTracker = React.lazy(() => import('../ProgressTracker'));
 
 const InteractiveChapter = ({ chapterSlug, title }) => {
   // Handle API context dynamically to avoid SSR issues
