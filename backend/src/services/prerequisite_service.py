@@ -205,8 +205,8 @@ class PrerequisiteService:
             "status": progress_status or "not_started",
             "prerequisites": chapter.prerequisites,
             "metadata": {
-                "estimated_reading_time": chapter.metadata.get("estimated_reading_time", 0),
-                "difficulty": chapter.metadata.get("difficulty", "beginner")
+                "estimated_reading_time": chapter.meta_data.get("estimated_reading_time", 0),
+                "difficulty": chapter.meta_data.get("difficulty", "beginner")
             }
         }
 

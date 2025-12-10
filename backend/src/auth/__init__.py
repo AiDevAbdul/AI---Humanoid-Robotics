@@ -2,7 +2,7 @@
 Authentication module for the Physical AI & Humanoid Robotics Textbook application
 """
 from .security import create_access_token, verify_password, get_password_hash, get_current_user
-from .schemas import Token, TokenData
+from .schemas import Token, TokenData, StudentRegister, StudentLogin
 
 __all__ = [
     "create_access_token",
@@ -10,5 +10,7 @@ __all__ = [
     "get_password_hash",
     "get_current_user",
     "Token",
-    "TokenData"
+    "TokenData",
+    "StudentRegister",
+    "StudentLogin"
 ]

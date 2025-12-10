@@ -28,7 +28,7 @@ class ChapterService:
             query = query.filter(Chapter.module == module)
         if difficulty:
             # Assuming difficulty is in metadata
-            query = query.filter(Chapter.metadata['difficulty'].astext == difficulty)
+            query = query.filter(Chapter.meta_data['difficulty'].astext == difficulty)
         if search:
             query = query.filter(
                 Chapter.title.contains(search) |
@@ -70,7 +70,7 @@ class ChapterService:
             "order": chapter.order,
             "content": content,
             "interactive_elements": chapter.interactive_elements,
-            "metadata": chapter.metadata,
+            "metadata": chapter.meta_data,
             "prerequisites": chapter.prerequisites,
             "created_at": chapter.created_at.isoformat() if chapter.created_at else None,
             "updated_at": chapter.updated_at.isoformat() if chapter.updated_at else None

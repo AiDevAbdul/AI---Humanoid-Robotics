@@ -1,6 +1,6 @@
 from typing import Dict, Any, List
 import openai
-from ..config.settings import settings
+from ..config import settings
 
 
 class OpenAIAgent:

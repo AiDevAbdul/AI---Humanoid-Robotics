@@ -20,7 +20,7 @@ class Chapter(Base):
     prerequisites = Column(JSON, default=list)  # List of UUIDs of prerequisite chapters
     content = Column(JSON, default=dict)  # Contains text, html_content, translations
     interactive_elements = Column(JSON, default=list)  # Contains simulators, code playgrounds, etc.
-    metadata = Column(JSON, default=dict)  # Contains reading time, objectives, keywords, difficulty
+    meta_data = Column(JSON, default=dict)  # Contains reading time, objectives, keywords, difficulty
     is_published = Column(Boolean, default=False, nullable=False)
 
     # Relationships

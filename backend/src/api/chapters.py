@@ -48,9 +48,9 @@ async def get_chapters(
             "slug": chapter.slug,
             "module": chapter.module,
             "order": chapter.order,
-            "difficulty": chapter.metadata.get("difficulty", "unknown"),
-            "estimated_reading_time": chapter.metadata.get("estimated_reading_time", 0),
-            "learning_objectives": chapter.metadata.get("learning_objectives", []),
+            "difficulty": chapter.meta_data.get("difficulty", "unknown"),
+            "estimated_reading_time": chapter.meta_data.get("estimated_reading_time", 0),
+            "learning_objectives": chapter.meta_data.get("learning_objectives", []),
             "prerequisites": chapter.prerequisites,
             "is_locked": is_locked,
             "progress": {

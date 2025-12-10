@@ -1,6 +1,6 @@
 from typing import Dict, Any, List
 import google.generativeai as genai
-from ..config.settings import settings
+from ..config import settings
 
 
 class GeminiService:
